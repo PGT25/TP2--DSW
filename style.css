@@ -1,0 +1,21 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #343a40, #f8f9fa); /* Gris oscuro a gris claro */
+}
+.bg-warning-opaco {
+  background-color: #ffdb58; /* Amarillo opaco (puedes ajustar este valor) */
+}
+#modelosSamsung .col-md-3 {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+* Estilos opcionales para los modelos */
+#modelosContainer .col-md-3 {
+    border: 1px solid #ccc;
+    padding: 10px;
+}

@@ -1,0 +1,41 @@
+// Importa Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// Estilos personalizados
+body {
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+#hero {
+    background-color: #e9ecef;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#destacados {
+    padding: 50px 0;
+}
+
+
+
+$warning: #ffc107 !default; // Amarillo más oscuro (puedes ajustar este valor)
+// O, para ajustar la opacidad del amarillo actual:
+$warning: rgba(255, 193, 7, 0.8); // 80% de opacidad
+
+
+
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+

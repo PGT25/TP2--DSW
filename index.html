@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 2 Importados</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-image: linear-gradient(to bottom, #343a40, #f8f9fa);">
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary bg-opacity-50 p-1">
+        <div class="container-fluid">
+            <div class="row w-100 align-items-center">
+                <div class="col-md-2">
+                    <a class="navbar-brand" href="#">
+                        IMP
+                        <img src="ImagenesTP/IndexImagenes/LOGO1 - copia.png" alt="Logo" width="70" height="70">
+                        RTADOS
+                    </a>
+                </div>
+                <div class="col-md-5">
+                    <h4 class="fs-6 text-warning">¡Un mundo nuevo en un click de distancia!</h4>
+                </div>
+                <div class="col-md-5 d-flex justify-content-end">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" target="_blank">
+                                <i class="">Inicio</i>                                ">Inicio</i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.frsf.utn.edu.ar/" target="_blank">
+                                <i class="bi bi-share me-2"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.facebook.com/groups/790467302556199" target="_blank">
+                                <i class="bi bi-facebook me-2"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.instagram.com/utnsantafe/" target="_blank">
+                                <i class="bi bi-instagram me-2"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="URL_DEL_ICONO_PERSONA" target="_blank">
+                                <i class="bi bi-person-fill me-2"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="carrito.html" id="carrito-link">
+                                <i class="bi bi-cart me-2"></i>
+                                <span id="cantidad-carrito">0</span>
+                                <span id="precio-carrito"> ($0)</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="container-fluid p-1">
+            <div class="row">
+                <div class="col-auto">
+                    <a href="#" id="mostrarMapa" class="bg-warning bg-warning-opaco p-2 rounded text-white text-start">Estamos en Santa Fé (3040)</a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="mapa" style="display: none;">
+            <iframe src="https://www.google.com/maps?q=-31.617166,-60.674474&output=embed" width="600" height="450" style="border:0;"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        <script>
+            document.getElementById('mostrarMapa').addEventListener('click', function (event) {
+                event.preventDefault();
+                document.getElementById('mapa').style.display = 'block';
+            });
+        </script>
+    </section>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 d-flex justify-content-center">
+                <p class="bg-warning bg-warning-opaco p-2 rounded text-white text-start">Promociones Bancarias<br>Disfruta de reintegros y cuotas sin interes</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="ImagenesTP/IndexImagenes/muchoscelulares.jpg" class="d-block w-100" alt="Imagen 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="ImagenesTP/IndexImagenes/movistar-2-x-1.jpg" class="d-block w-100" alt="Imagen 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="ImagenesTP/IndexImagenes/naranjax.png" class="d-block w-100" alt="Imagen 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="ImagenesTP/IndexImagenes/posnet.png" class="d-block w-100" alt="Imagen 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="ImagenesTP/IndexImagenes/tarjetascredito.png" class="d-block w-100" alt="Imagen 5">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .carousel-item img {
+            height: 150px;
+            object-fit: cover;
+        }
+    </style>
+
+    <section id="destacados">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 d-flex justify-content-center">
+                    <p id="mostrarOfertas" class="bg-warning bg-warning-opaco p-2 rounded text-white text-start" style="cursor: pointer;">Destacados</p>
+                </div>
+            </div>
+        </div>
+        <div id="ofertas" style="display: none;"></div>
+    </section>
+
+    <script>
+        const mostrarOfertas = document.getElementById('mostrarOfertas');
+        const ofertas = document.getElementById('ofertas');
+
+        mostrarOfertas.addEventListener('click', () => {
+            ofertas.style.display = (ofertas.style.display === 'block') ? 'none' : 'block';
+            if (ofertas.style.display === 'block') {
+                ofertas.innerHTML = `
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="ImagenesTP/IndexImagenes/samsung.png" class="card-img-top" alt="Samsung" style="max-width: 150px; height: auto;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Samsung Galaxy S23</h5>
+                                        <p class="card-text"> OFERTA 20% de descuento.</p>
+                                        <a href="#" class="btn btn-primary">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="ImagenesTP/IndexImagenes/iphone.png" class="card-img-top" alt="iPhone" style="max-width: 150px; height: auto;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">iPhone 15</h5>
+                                        <p class="card-text">Envío gratis.</p>
+                                        <a href="#" class="btn btn-primary">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="ImagenesTP/IndexImagenes/huawei.png" class="card-img-top" alt="Huawei" style="max-width: 150px; height: auto;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Huawei P60 Pro</h5>
+                                        <p class="card-text">¡Descuento por tiempo limitado! 15% off.</p>
+                                        <a href="#" class="btn btn-primary">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+            }
+        });
+    </script>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center mb-4">
+                <img src="ImagenesTP/IndexImagenes/samsung.png" alt="Celular Samsung"
+                    class="img-fluid w-50 mx-auto d-block marca-imagen" data-marca="samsung" style="cursor: pointer;">
+                <h3>Samsung</h3>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <img src="ImagenesTP/IndexImagenes/iphone.png" alt="Celular iPhone"
+                    class="img-fluid w-50 mx-auto d-block marca-imagen" data-marca="iphone" style="cursor: pointer;">
+                <h3>iPhone</h3>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <img src="ImagenesTP/IndexImagenes/huawei.png" alt="Celular Haweii"
+                    class="img-fluid w-50 mx-auto d-block marca-imagen" data-marca="huawei" style="cursor: pointer;">
+                <h3>Huawei</h3>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="modalModelos" tabindex="-1" aria-labelledby="modalModelosLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalModelosLabel">Modelos de Celulares</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="modelosContainer"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalCarrito" tabindex="-1" aria-labelledby="modalCarritoLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalCarritoLabel">Carrito de Compras</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="carritoContainer"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        const imagenesMarca = document.querySelectorAll('.marca-imagen');
+        const modelosContainer = document.getElementById('modelosContainer');
+        const carrito = [];
+        const cantidadCarrito = document.getElementById('cantidad-carrito');
+        const precioCarrito = document.getElementById('precio-carrito');
+        const carritoContainer = document.getElementById('carritoContainer');
+
+        const modelos = {
+            samsung: [{
+                nombre: "Samsung Galaxy A14",
+                caracteristicas: "Pantalla de 6.6 pulgadas, cámara de 50MP, procesador MediaTek Helio G80",
+                precio: 250000,
+                imagen: "ImagenesTP/samsung/SamsungA14.jpg"
+            }, {
+                nombre: "Samsung Galaxy A21",
+                caracteristicas: "Pantalla de 6.5 pulgadas, cámara de 16MP, procesador Exynos 850",
+                precio: 3859782,
+                imagen: "ImagenesTP/samsung/SamsungS21.jpg"
+            }, {
+                nombre: "Samsung Galaxy A55",
+                caracteristicas: "Pantalla de 6.4 pulgadas, cámara de 64MP, procesador Exynos 1280",
+                precio: 25489744,
+                imagen: "ImagenesTP/samsung/SamsungA55.jpg"
+            }, {
+                nombre: "Samsung Galaxy A35",
+                caracteristicas: "Pantalla de 6.6 pulgadas, cámara de 48MP, procesador Snapdragon 750G",
+                precio: 1479999,
+                imagen: "ImagenesTP/samsung/SamsungA355g.jpg"
+            }]
+        };
+
+        imagenesMarca.forEach(imagen => {
+            imagen.addEventListener('click', () => {
+                const marca = imagen.dataset.marca;
+                mostrarModelos(marca);
+                $('#modalModelos').modal('show');
+            });
+        });
+
+        function mostrarModelos(marca) {
+            modelosContainer.innerHTML = modelos[marca].map(modelo => `
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100">
+                        <img src="${modelo.imagen}" class="card-img-top" alt="${modelo.nombre}">
+                        <div class="card-body">
+                            <h5 class="card-title">${modelo.nombre}</h5>
+                            <p class="card-text">${modelo.caracteristicas}</p>
+                            <p class="text-success">$${modelo.precio.toLocaleString()}</p>
+                            <button class="btn btn-primary agregar-carrito" 
+                                data-precio="${modelo.precio}"
+                                data-nombre="${modelo.nombre}">
+                                Agregar al Carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+
+            document.querySelectorAll('.agregar-carrito').forEach(boton => {
+                boton.addEventListener('click', () => {
+                    const precio = parseFloat(boton.dataset.precio);
+                    const nombre = boton.dataset.nombre;
+                    carrito.push({ nombre, precio });
+                    actualizarCarrito();
+                });
+            });
+        }
+
+        function actualizarCarrito() {
+            cantidadCarrito.textContent = carrito.length;
+            const total = carrito.reduce((sum, item) => sum + item.precio, 0);
+            precioCarrito.textContent = `($${total.toLocaleString()})`;
+            
+            carritoContainer.innerHTML = carrito.map((item, index) => `
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span>${index + 1}. ${item.nombre}</span>
+                    <span>$${item.precio.toLocaleString()}</span>
+                </div>
+            `).join('');
+        }
+    </script>
+</body>
+</html>
+
+    
+            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+         
+
